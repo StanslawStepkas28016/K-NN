@@ -72,7 +72,9 @@ public class kEngine {
                 }
             }
 
-            // Najczęściej występujący atrybut (na podstawie najkrótszej odległości).
+            // Najczęściej występujący atrybut (na podstawie najkrótszej odległości),
+            // decyzja w kwestii wyboru elementu, w przypadku takiej samej odległości,
+            // jest pseudolosowa - ostatni element w tablicy, który ma maxCount.
             int maxCount = 0;
             String res = "";
             for (Map.Entry<String, Integer> entry : decisionMap.entrySet()) {
